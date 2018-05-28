@@ -23,6 +23,22 @@ var camelCarriesWater = true;
 var maxCamelsInCaravan = 44;
 ```
 
+## Meaningful names
+
+Always try to name your variables and functions using meaningful names. It takes some practice, and sometimes you won't get them right the first time around, but keeping your code as human-readable as possible ensures that it gets less messy as the codebase grows.
+
+```
+// bad
+var students = [stud1, stud2];
+var changedStudents = sortStudents(students);  // sortStudents() function does some kind of sorting
+
+// good
+var students = [student1, student2];
+var sortedStudents = sortStudents(students);
+```
+
+In the example above, `student1` is more meaningful than `stud1`, and `sortedStudents` variable tells us more than `changedStudents`.
+
 ## Functions
 
 Always start every word of function's with a capital letter
