@@ -1,8 +1,11 @@
 # Node.js + Express + Codeanywhere tutorial
 
-[What is Node.js?](#what-is-node)
+## Table of contents
+- [What is Node.js?](#what-is-node.js)
+- [Should I use plain Node?](#should-i-use-plain-node?)
+- [Codeanywhere.com](#codeanywhere.com)
 
-## <a href="what-is-node"></a> What is Node.js?
+## What is Node.js?
 
 https://www.w3schools.com/nodejs/nodejs_intro.asp
 
