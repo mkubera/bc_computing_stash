@@ -1,6 +1,7 @@
 # Node.js + Express + Codeanywhere tutorial
 
 ## Table of contents
+[note: needs fixing (-Nicholas)]
 - [What is Node.js?](#what-is-node.js)
 - [Should I use plain Node?](#should-i-use-plain-node?)
 - [Codeanywhere.com](#codeanywhere.com)
@@ -15,7 +16,7 @@ No, we will be using a low-level framework called Express. https://expressjs.com
 
 ## Why Express, and not Node?
 
-Node is low-level. More low-level than Express :) Express is an abstraction layer, a framework created by coders for coders that exposes a set of useful, more human-readable functions (or API) that make developing in server-side JS a much easier task than than using plain Node's API.
+Node is low-level. More low-level than Express :) Express is an abstraction layer, a framework created by coders for coders that exposes a set of useful, more human-readable functions (or API) that make developing in server-side JS a much easier task than using plain Node's API.
 
 ## What's API?
 
@@ -124,7 +125,7 @@ Reference: https://expressjs.com/en/starter/static-files.html
 ...
 const nunjucks  = require('nunjucks')
 
-app.use(express.static('public'))  // <= this is the new line
+app.use(express.static('static'))  // <= this is the new line
 
 nunjucks.configure('views', {
   autoescape: true,
@@ -171,3 +172,73 @@ Then, we need to create `comics.html` in `views` folder, and make it look like t
 
 The above uses Nunjucks to dynamically create some HTML content. Here, we use `for` loop to loop over every `comic` in `comics` array. Then, inside this loop, we can access properties of every single comic, e.g. `comic.title`.  
 Try displaying the `id` of every comic. [hint: `comic.id`].
+
+
+## Sessions
+
+HTTP requests (usually sent by the browser) are stateless, meaning that accessing `example.com/` and `example.com/about` from the same browser (to the server) counts as two independent connections.  
+From our point of view, though, that's just one user. And, often, we need to be able to keep the state of the user (typical example would include: `isUserAuthenticated` `==` `true`/`false`). For that reason, we need to store a session for each user.  
+
+By now you should know how to install npm (Node Package Manager) packages. For our needs, we will be using [express-session](https://www.npmjs.com/package/express-session) package.  
+What this package does, in a nutshell is:  
+1. Stores session data in a chosen storage (`MemoryStore` by default, meaning it stores data in memory).
+2. Creates cookie on the client-side with a Session ID only.
+
+### Initiating session middleware
+
+Before we start, `middleware` is a piece of code that fires after a request hits the server, but before a requested route's code is actually accessed.  
+Now, this is what you need to initiate a session:
+```
+var app = express();
+var session = require('express-session');
+var session_options = {
+  secret: '0f9sdui09fusd0uau40ru4ekc;klsdkz;lzs[2oe340#d]',
+  resave: false,
+  saveUninitialized: false,
+  cookie: { secure: false }
+};
+
+// the code below allows you to get secure cookies in production
+// but non-secure cookies in development
+// secure cookies would crush your app in development, hence
+// we use a conditional here
+if (app.get('env') === 'production') {
+  app.set('trust proxy', 1); // trust first proxy
+  session_options.cookie.secure = true; // serve secure cookies
+}
+
+app.use(session(session_options));
+```
+
+And that's it. That's your session initialized and silently doing it's thing!
+
+### Accessing the session storage/object
+
+This is pretty simple. Inside a route's callback function (where `req` and `res` objects are available), you can do this:
+```
+req.session;
+```
+
+And because `req.session` is an object, you can dig deeper into it, like so:
+```
+req.session.username;  // if no 'username' was saved prior to accessing it, you will get 'undefined'
+```
+
+### Modifying the session object
+
+Again, it's pretty basic JavaScript. You can modify or add a property to `req.session` object like so:
+```
+req.session.username = "Gregory McPeanut";
+req.session.age = 33;
+req.session.loggedIn = true;
+```
+
+Then, you can access the session data easily:
+
+```
+req.session.username; // => "Gregory McPeanut"
+req.session.age // => 33
+req.session.loggedIn // => true
+```
+
+If you need help understanding sessions, let your Lecturer know. But before you do this, check out this [explanation](https://stackoverflow.com/questions/3804209/what-are-sessions-how-do-they-work#3804387), it's pretty decent :)
