@@ -242,3 +242,11 @@ req.session.loggedIn // => true
 ```
 
 If you need help understanding sessions, let your Lecturer know. But before you do this, check out this [explanation](https://stackoverflow.com/questions/3804209/what-are-sessions-how-do-they-work#3804387), it's pretty decent :)
+
+
+
+## Body parsing aka parsing web forms data
+
+### Web forms
+
+### Parsing data on the server
