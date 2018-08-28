@@ -32,6 +32,59 @@ These are the most often used HTML attributes:
 * Used with `<a>` tag:  
   * `href=""`  
   
+  
+### File paths
+
+This one is important.  
+Pay attention to the table with 4 examples: https://www.w3schools.com/html/html_filepaths.asp
+
+
+### Typical structure of HTML document
+
+Feel free to copy/paste it, and use as a skeleton for your web pages.   
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <!-- Navigation bar
+    Links to web pages of your site will go here... -->
+  </nav>
+  
+  <header>
+    <!-- Header
+    Typically a widescreen-style banner for your web site.
+    It may include a call-to-action button:
+    https://blog.hubspot.com/marketing/call-to-action-examples -->
+  </header>
+  
+  <section>
+    <!-- A Section
+    Contents of your web page should be divided into Sections
+    You will likely have many of those on a web page -->
+  </section>
+  
+  <footer>
+    <!-- Footer
+    Footers typically include information such as:
+    social media links,
+    information about the company,
+    address,
+    a list of links,
+    Privacy Policy, Code of Conduct, and links to other legal documents -->
+  </footer>
+  
+</body>
+</html>
+```
 
 ### CSS
  
