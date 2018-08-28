@@ -1,5 +1,14 @@
 # HTML
 
+* [Learning resources](#learning-resources)
+* [Basics you need to know](#basics-you-need-to-know)
+  * [HTML tags](#html-tags)
+  * [HTML attributes](#html-attributes)
+  * [File paths](#file-paths)
+  * [Typical structure of HTML document](#typical-structure-of-html-document)
+  * [CSS in HTML](#css-in-html)
+  
+
 ## Learning resources
 
 1 **W3Schools**: https://www.w3schools.com/html/default.asp  
@@ -86,7 +95,7 @@ Feel free to copy/paste it, and use as a skeleton for your web pages.
 </html>
 ```
 
-### CSS
+### CSS in HTML
  
 There are three (3) ways to use CSS in HTML:  
  
