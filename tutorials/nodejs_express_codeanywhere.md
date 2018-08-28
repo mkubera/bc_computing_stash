@@ -17,6 +17,9 @@
 * [What about static files such as CSS and client side JS](#what-about-static-files-such-as-css-and-client-side-js)
 * [How about passing some dynamic data to an HTML template](#how-about-passing-some-dynamic-data-to-an-html-template)
 * [Sessions](#sessions)
+* [Body parsing aka parsing web forms data](#body-parsing-aka-parsing-web-forms-data)
+
+
 
 
 ## What is Node
