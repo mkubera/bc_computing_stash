@@ -1,38 +1,51 @@
-# Node.js + Express + Codeanywhere tutorial
+# Node.js + Express + Codeanywhere tutorials
 
 ## Table of contents
-[note: needs fixing (-Nicholas)]
-- [What is Node.js?](#what-is-node.js)
-- [Should I use plain Node?](#should-i-use-plain-node?)
-- [Codeanywhere.com](#codeanywhere.com)
 
-## What is Node.js?
+* [What is Node?](#what-is-node)
+* [Should I use plain Node?](#should-i-use-plain-node)
+* [Why Express?](#why-express)
+* [What is API?](#what-is-api)
+* [Codeanywhere.com](#codeanywhere)
+* [Codeanywhere. Step 1: Sign up](#codeanywhere-step-1-sign-up)
+* [Codeanywhere. Step 2: Create the app](#codeanywhere-step-2-create-the-app)
+* [Codeanywhere. Step 3: Familiarize yourself with the app](#codeanywhere-step-3-familiarize-yourself-with-the-app)
+* [Codeanywhere. Step 4: Initialise new Node project and install Express](#codeanywhere-step-4-initialise-new-node-project-and-install-express)
+* [Codeanywhere. Step 5: Working web server and Hello World](#codeanywhere-step-5-working-web-server-and-hello-world)
+* [Create your first route and employ a Nodemon daemon](#create-your-first-route-and-employ-a-nodemon-daemon)
+* [Have our route respond with HTML file](#have-our-route-respond-with-html-file)
+* [What about static files such as CSS and client side JS](#what-about-static-files-such-as-css-and-client-side-js)
+* [How about passing some dynamic data to an HTML template](#how-about-passing-some-dynamic-data-to-an-html-template)
+* [Sessions](#sessions)
+
+
+## What is Node
 
 https://www.w3schools.com/nodejs/nodejs_intro.asp
 
-## Should I use plain Node?
+## Should I use plain Node
 
 No, we will be using a low-level framework called Express. https://expressjs.com/
 
-## Why Express, and not Node?
+## Why Express
 
 Node is low-level. More low-level than Express :) Express is an abstraction layer, a framework created by coders for coders that exposes a set of useful, more human-readable functions (or API) that make developing in server-side JS a much easier task than using plain Node's API.
 
-## What's API?
+## What is API
 
 API means `Application Programming Interface`. Simply put: it's a set of functions that wraps some code and are exposed for other coders to use. API is always created to simplify things for other coders. The word API is usually used in the context of systems that allow you to interact with them (e.g. Paypal API, Instragram API, Stripe API). But what frameworks do (server- or front-side) is really API as well. And test frameworks do the same, e.g. using QUnit you will also find that it has an API (a set of functions that you can use within the QUnit testing framework). A driver to interact with MySQL database also exposes an API. And so on.
 
-## Codeanywhere.com
+## Codeanywhere
 
 Codeanywhere allows you to code from whenever you want. (Provided that you choose a Node.js project at the beginning) It comes with Node, npm, MySQL, and a few other useful things installed. It also runs on an Ubuntu (Linux) operating system.
 
-## Codeanywhere. Step 1: Sign up
+## Codeanywhere Step 1 Sign up
 
 1 Go to: https://codeanywhere.com  
 2 Sign up.  
 3 Go to Editor.
 
-## Codeanywhere. Step 2: Create the app
+## Codeanywhere Step 2 Create the app
 
 1 Create a new project.  
 2 File > New Project > (here enter the name of your project, e.g. `MyFirstApp`)  
@@ -41,12 +54,12 @@ Codeanywhere allows you to code from whenever you want. (Provided that you choos
 5 Scroll down the screen and click on `CREATE` button.  
 6 Wait until `Deploying container` disappears.
 
-## Codeanywhere. Step 3: Familiarize yourself with the app
+## Codeanywhere Step 3 Familiarize yourself with the app
 
 You should now see two opened tabs, each called by the name of your project. The first one is a console (or terminal). That's a way to interact with Ubuntu OS directly.  
 The second one is an info file telling you more about your project. Read it twice. Familiarize yourself with it. Leave it open. You will be coming back to it in the future.
 
-## Codeanywhere. Step 4: Initiate package.json + install Express
+## Codeanywhere Step 4 Initialise new Node project and install Express
 
 1 Go to terminal (1st tab, or (left hand side) right click on the name of your project under `Connections` and choose `SSH Terminal`).  
 2 Type `npm init`. This will initialise a new Node.js project. You will be asked several questions. Just hit enter to accept the default values for each question.  
@@ -55,7 +68,7 @@ The second one is an info file telling you more about your project. Read it twic
 5 Now you should see `package.json` showing properly.  
 6 Go back to the console, and type `npm install express --save`. This will install the Express framework + save it as a dependency in `package.json` file.  
 
-## Codeanywhere. Step 5: Working web server + 'Hello World!'
+## Codeanywhere Step 5 Working web server and Hello World
 
 Let's now create the most basic web server using Express framework.  
 1 Create an `index.js` file.  Alt+N (to Create New File...) > Ctrl+S (to Save it) > Name it `index.js` > Click on the name of your project to create a connection.  
@@ -71,7 +84,7 @@ Let's now create the most basic web server using Express framework.
 11 Congrats!! Your first app is running smoothly on a remote server, somewhere in the world :-)
 
 
-## Create your first route + employ a daemon: Nodemon
+## Create your first route and employ a Nodemon daemon
 
 Routes are server's API. They specify what happens when someone (or something) accesses a specific url (e.g. http://example.com/about). In this case `/about` is a route. It has to respond with something, otherwise user will see an error message (404).  
 
@@ -88,7 +101,8 @@ Routes are server's API. They specify what happens when someone (or something) a
 11 Now, back in terminal, type `npm start`. This will launch the script we've created in `package.json`. Cool! Awesome!! From now on, always start your project with `npm start`.  
 12 Great!! You've just created a new route that responds with a simple string when someone/thing accesses it! And you've made your server to "automagically" reload on any change you make to files -- fantastic!
 
-## Let's have our route respond with HTML file, shall we?
+
+## Have our route respond with HTML file
 
 So far our routes have been responding with simple strings. That's useful to test things out, but that's not what we expect from our web site. We expect it to send HTML. Let's see how we can accomplish that.  
 
@@ -114,7 +128,7 @@ nunjucks.configure('views', {
 12 Switch to the app tab, make sure the url ends with `/about`, reload the page, and you should see big header saying `About route!`.  
 13 Congrats! Your first HTML file sent from the server to your browser, rendering HTML!!
 
-## What about static files, such as CSS and client-side JS?
+## What about static files such as CSS and client side JS
 
 Good question! We need our web server to serve static files (such as CSS and client/browser-side JS). Let's tell our app what folder it should treat as a source of 'static' files. Express makes it pretty easy for us.  
 Reference: https://expressjs.com/en/starter/static-files.html  
@@ -141,7 +155,7 @@ nunjucks.configure('views', {
 8 Great! That's static files for us!
 
 
-## How about passing some dynamic data (typically from MySQL) to an HTML template?
+## How about passing some dynamic data to an HTML template
 
 Let's say we have some comic books stored in our MySQL database. Let's furthermore say that we've just started modelling our data, and every comic book is pretty barren, and only has an `id` and a `title`.
 
