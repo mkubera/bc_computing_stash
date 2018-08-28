@@ -17,8 +17,12 @@
 * [What about static files such as CSS and client side JS](#what-about-static-files-such-as-css-and-client-side-js)
 * [How about passing some dynamic data to an HTML template](#how-about-passing-some-dynamic-data-to-an-html-template)
 * [Sessions](#sessions)
+  * [Initiating session middleware](#initiating-session-middleware)
+  * [Accessing the session object](#accessing-the-session-object)
+  * [Modifying the session object](#modifying-the-session-object)
 * [Body parsing aka parsing web forms data](#body-parsing-aka-parsing-web-forms-data)
-
+  * [Web forms](#web-forms)
+  * [Parsing data on the server](#parsing-data-on-the-server)
 
 
 
@@ -229,7 +233,7 @@ app.use(session(session_options));
 
 And that's it. That's your session initialized and silently doing it's thing!
 
-### Accessing the session storage/object
+### Accessing the session object
 
 This is pretty simple. Inside a route's callback function (where `req` and `res` objects are available), you can do this:
 ```
