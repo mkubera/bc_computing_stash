@@ -1,5 +1,7 @@
 # HTML
 
+## Table of contents
+
 * [Learning resources](#learning-resources)
 * [Basics you need to know](#basics-you-need-to-know)
   * [HTML tags](#html-tags)
