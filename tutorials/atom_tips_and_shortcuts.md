@@ -1,6 +1,6 @@
 ## Tips
 
-https://www.sitepoint.com/12-favorite-atom-tips-and-shortcuts-to-improve-your-workflow/
+[12 Tips To Improve Your Workflow](https://www.sitepoint.com/12-favorite-atom-tips-and-shortcuts-to-improve-your-workflow/)
 
 ## Shortcuts
 
