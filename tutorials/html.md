@@ -18,6 +18,8 @@
 
 ## Basics you need to know
 
+In this section you will find a list of things you should learn and know. This document doesn't explain things in detail, it only lists them. To learn in detail about HTML, use the W3Schools website.
+
 ### HTML tags
 
 These are the most often used HTML tags:  
@@ -25,7 +27,7 @@ These are the most often used HTML tags:
 * Used once per `.html` file: 
   * `<html>`, `<head>`, `<body>`  
 * Used many times: 
-  * `<div>`, `<h1>`, `<h2>`, `<h3>`, `<p>`, `<span>`, `<b>`, `<i>`, `<u>`, `<ul>`, `<li>`, `<blockquote>`, `<a>`  
+  * `<div>`, `<h1>`, `<h2>`, `<h3>`, `<p>`, `<span>`, `<b>` (or `<strong>`), `<i>`, `<u>`, `<ul>`, `<li>`, `<blockquote>`, `<a>`  
 * Semantic Tags (often used just once, but can be used many times): 
   * `<nav>`, `<header>`, `<section>`, `<footer>`  
 * `<head>` tags (used many times):  
