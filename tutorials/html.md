@@ -67,33 +67,35 @@ Feel free to copy/paste it, and use as a skeleton for your web pages.
 </head>
 <body>
 
-  <nav>
-    <!-- Navigation bar
-    Links to web pages of your site will go here... -->
-  </nav>
-  
-  <header>
-    <!-- Header
-    Typically a widescreen-style banner for your web site.
-    It may include a call-to-action button:
-    https://blog.hubspot.com/marketing/call-to-action-examples -->
-  </header>
-  
-  <section>
-    <!-- A Section
-    Contents of your web page should be divided into Sections
-    You will likely have many of those on a web page -->
-  </section>
-  
-  <footer>
-    <!-- Footer
-    Footers typically include information such as:
-    social media links,
-    information about the company,
-    address,
-    a list of links,
-    Privacy Policy, Code of Conduct, and links to other legal documents -->
-  </footer>
+  <div id="wrapper">
+    <nav>
+      <!-- Navigation bar
+      Links to web pages of your site will go here... -->
+    </nav>
+    
+    <header>
+      <!-- Header
+      Typically a widescreen-style banner for your web site.
+      It may include a call-to-action button:
+      https://blog.hubspot.com/marketing/call-to-action-examples -->
+    </header>
+    
+    <section>
+      <!-- A Section
+      Contents of your web page should be divided into Sections
+      You will likely have many of those on a web page -->
+    </section>
+    
+    <footer>
+      <!-- Footer
+      Footers typically include information such as:
+      social media links,
+      information about the company,
+      address,
+      a list of links,
+      Privacy Policy, Code of Conduct, and links to other legal documents -->
+    </footer>
+  </div>
   
 </body>
 </html>
