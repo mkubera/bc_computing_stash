@@ -71,7 +71,7 @@ The second one is an info file telling you more about your project. Read it twic
 1 Go to terminal (1st tab, or (left hand side) right click on the name of your project under `Connections` and choose `SSH Terminal`).  
 2 Type `npm init`. This will initialise a new Node.js project. You will be asked several questions. Just hit enter to accept the default values for each question.  
 3 Now type `ls` (a command to list files in the directory). You should see only one filed: `package.json`.  
-4 Reload the browser's tab. The browser will likely ask about leaving the page. Confirm 'Leave'. (This will show `package.json` correctly in the list of files on the left hand side.)
+4 Reload the browser's tab. The browser will likely ask about leaving the page. Confirm 'Leave'. (This will show `package.json` correctly in the list of files on the left hand side.)  
 5 Now you should see `package.json` showing properly.  
 6 Go back to the console, and type `npm install express --save`. This will install the Express framework + save it as a dependency in `package.json` file.  
 
@@ -81,7 +81,7 @@ Let's now create the most basic web server using Express framework.
 1 Create an `index.js` file.  Alt+N (to Create New File...) > Ctrl+S (to Save it) > Name it `index.js` > Click on the name of your project to create a connection.  
 2 Visit this page: https://expressjs.com/en/starter/hello-world.html  
 3 Copy/paste the code from it (6 lines of code).  
-4 Save `index.js` file (Ctrl+S).
+4 Save `index.js` file (Ctrl+S).  
 5 Go to terminal tab.  
 6 Type `node index.js`.  
 7 You should see `Example app listening on port 3000!` in the terminal.  
