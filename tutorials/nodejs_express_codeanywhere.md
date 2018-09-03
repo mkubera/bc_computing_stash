@@ -212,8 +212,8 @@ Now, this is what you need to initiate a session:
 ```
 var app = express();
 var session = require('express-session');
-var session_options = {
-  secret: '0f9sdui09fusd0uau40ru4ekc;klsdkz;lzs[2oe340#d]',
+var sessionOptions = {
+  secret: '0f9sdui09fusd0uau40ru4ekc;klsdkz;lzs[2oe340#d]',  // session's secret (make sure to type a different string of random characters here)
   resave: false,
   saveUninitialized: false,
   cookie: { secure: false }
@@ -225,10 +225,10 @@ var session_options = {
 // we use a conditional here
 if (app.get('env') === 'production') {
   app.set('trust proxy', 1); // trust first proxy
-  session_options.cookie.secure = true; // serve secure cookies
+  sessionOptions.cookie.secure = true; // serve secure cookies
 }
 
-app.use(session(session_options));
+app.use(session(sessionOptions));
 ```
 
 And that's it. That's your session initialized and silently doing it's thing!
