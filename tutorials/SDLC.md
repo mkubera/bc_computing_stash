@@ -1,5 +1,31 @@
 # SDLC (Software Development LifeCycle)
 
+## Table of Contents
+
+* Software Development LifeCycle (SDLC)
+* Sequential, Iterative, and Incremental development
+  * Cheat sheet
+  * Agile
+  * Waterfall
+  * Spiral
+* Prototype (revolutionary vs evolutionary)
+  * Revolutionary prototyping
+  * Evolutionary prototyping
+* Requirements
+  * Functional requirements
+  * Non functional requirements
+  * Examples of functional requirements of a web app
+  * Examples of non functional requirements of a web app
+* Types of testing
+  *  Alpha testing 
+  *  Beta testing
+  *  White box testing
+  *  Black box testing 
+  *  Black box vs white box testing 
+  *  Usability testing 
+  *  Automated unit testing 
+* Unified Modeling Language (UML)
+
 ## Software Development LifeCycle (SDLC)
 
 In a nutshell, **SDLC** involves:  
@@ -22,7 +48,7 @@ In case you wondered, companies have their own unique SDLCs because these are no
 
 ## Sequential, Iterative, and Incremental development
 
-### Cheat sheet:  
+### Cheat sheet 
 **Sequential** means **Waterfall**  
 **Iterative** means **Agile**  
 **Incremental** means **Spiral**  
@@ -52,16 +78,19 @@ Read about Waterfall vs Spiral models of systems development + (dis)advantages h
 
 ## Prototype (revolutionary vs evolutionary)
 
-### Revolutionary ("throw-away") prototyping
-> "Throwaway prototyping is where the objective of the evolutionary development process is to understand the customer's requirements and hence develop a better requirements definition for the system. The prototype concentrates on experimenting with the customer requirements that are poorly understood."
+### Revolutionary prototyping
+> "Revolutionary, pr "Throwaway", prototyping is where the objective of the evolutionary development process is to understand the customer's requirements and hence develop a better requirements definition for the system. The prototype concentrates on experimenting with the customer requirements that are poorly understood."
 
 ### Evolutionary prototyping
 > "Exploratory development where the objective of the process is to work with the customer to explore their requirements and deliver a final system. The development starts with the parts of the system that are understood. The system evolves by adding new features proposed by the customer."  
 
 
-## Requirements (functional vs non-functional)
+## Requirements
 
-Functional requirements describe what the software/website should do (the functions). In other words: what user should be able to do with the website.    
+### Functional requirements
+Functional requirements describe what the software/website should do (the functions). In other words: what user should be able to do with the website.  
+
+### Non functional requirements
 Non-functional requirements are not concerned with the functions of the system. Instead, they look at the criteria to which the software or website is expected to conform to. Non-functional requirements can include things like response time and reliability. They tend also to be closely tied to user satisfaction.   
 
 ### Examples of functional requirements of a web app
@@ -71,7 +100,7 @@ Non-functional requirements are not concerned with the functions of the system. 
 *	Users must be able to view all products available in the shop
 *	Allow adding items to basket
 
-### Examples of non-functional requirements of a web app:
+### Examples of non functional requirements of a web app:
 *	Must be intuitive and easy to use by all employees (incl. managers & other stakeholders)
 *	Available in several languages (English, French, Spanish)
 *	Allows to make several sales at the same time without lowering the performance of the app
