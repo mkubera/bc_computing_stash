@@ -2,31 +2,33 @@
 
 ## Table of Contents
 
-* Software Development LifeCycle (SDLC)
-* Sequential, Iterative, and Incremental development
-  * Cheat sheet
-  * Agile
-  * Waterfall
-  * Spiral
-* Prototype (revolutionary vs evolutionary)
-  * Revolutionary prototyping
-  * Evolutionary prototyping
-* Requirements
-  * Functional requirements
-  * Non functional requirements
-  * Examples of functional requirements of a web app
-  * Examples of non functional requirements of a web app
-* Types of testing
-  *  Alpha testing 
-  *  Beta testing
-  *  White box testing
-  *  Black box testing 
-  *  Black box vs white box testing 
-  *  Usability testing 
-  *  Automated unit testing 
-* Unified Modeling Language (UML)
+* [Software Development LifeCycle](#software-development-lifecycle)
+* [Sequential and Iterative and Incremental development](#sequential-and-iterative-and-incremental-development)
+  * [Cheat sheet](#cheat-sheet)
+  * [Agile](#agile)
+  * [Waterfall](#waterfall)
+  * [Spiral](#spiral)
+* [Prototype revolutionary vs evolutionary](#prototype-revolutionary-vs-evolutionary)
+  * [Revolutionary prototyping](#revolutionary-prototyping)
+  * [Evolutionary prototyping](#evolutionary-prototyping)
+* [Requirements](#requirements)
+  * [Functional requirements](#functional-requirements)
+  * [Non functional requirements](#non-functional-requirements)
+  * [Examples of functional requirements of a web app](#examples-of-functional-requirements-of-a-web-app)
+  * [Examples of non functional requirements of a web app](#examples-of-non-functional-requirements-of-a-web-app)
+* [Types of testing](#types-of-testing)
+  *  [Alpha testing](#alpha-testing)
+  *  [Beta testing](#beta-testing)
+  *  [White box testing](#white-box-testing)
+  *  [Black box testing](#black-box-testing)
+  *  [Black box vs white box testing](#black-box-vs-white-box-testing)
+  *  [Usability testing](#usability-testing)
+  *  [Automated unit testing](#automated-unit-testing)
+* [Unified Modeling Language](#unified-modeling-language)
+  * [UML](#uml)
+  * [UML diagrams](#uml-diagrams)
 
-## Software Development LifeCycle (SDLC)
+## Software Development LifeCycle
 
 In a nutshell, **SDLC** involves:  
 
@@ -46,7 +48,7 @@ Different companies do things differently, so you will find some minor differenc
 In case you wondered, companies have their own unique SDLCs because these are not set in stone, but rather have to be tailored towards what works best for a specific group of developers.  
 
 
-## Sequential, Iterative, and Incremental development
+## Sequential and Iterative and Incremental development
 
 ### Cheat sheet 
 **Sequential** means **Waterfall**  
@@ -76,7 +78,7 @@ Read more about all three models here: https://apprenticeoscar.wordpress.com/201
 Read about Waterfall vs Spiral models of systems development + (dis)advantages here: https://techspirited.com/comparison-between-waterfall-model-spiral-model  
 
 
-## Prototype (revolutionary vs evolutionary)
+## Prototype revolutionary vs evolutionary
 
 ### Revolutionary prototyping
 > "Revolutionary, pr "Throwaway", prototyping is where the objective of the evolutionary development process is to understand the customer's requirements and hence develop a better requirements definition for the system. The prototype concentrates on experimenting with the customer requirements that are poorly understood."
@@ -100,7 +102,7 @@ Non-functional requirements are not concerned with the functions of the system. 
 *	Users must be able to view all products available in the shop
 *	Allow adding items to basket
 
-### Examples of non functional requirements of a web app:
+### Examples of non functional requirements of a web app
 *	Must be intuitive and easy to use by all employees (incl. managers & other stakeholders)
 *	Available in several languages (English, French, Spanish)
 *	Allows to make several sales at the same time without lowering the performance of the app
@@ -134,7 +136,9 @@ In computer programming, unit testing is a software testing method by which indi
 more on wiki: https://en.wikipedia.org/wiki/Unit_testing
 
 
-## Unified Modeling Language (UML)
+## Unified Modeling Language
+
+Unified Modeling Language (UML).  
 
 ### UML
 https://en.wikipedia.org/wiki/Unified_Modeling_Language
