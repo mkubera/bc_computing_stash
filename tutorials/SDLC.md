@@ -37,7 +37,7 @@ In a nutshell, **SDLC** involves:
     *	Non-functional requirements
 2.	**Design**
     *	Wireframes
-    *	Full designs
+    *	Full visual designs
     * Navigation map
     * Flow charts
     * Logic algorithms
