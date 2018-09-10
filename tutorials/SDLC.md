@@ -60,6 +60,8 @@ In case you wondered, companies have their own unique SDLCs because these are no
 It’s called **iterative** because it’s developed in iterations. It starts as a small app (Planned, Designed, Developed, Tested), and then the team iterates over it to enhance it (again, Planning, Designing, Developing, Testing).  
 Iteration allows to go back in the process, meaning that if the team makes a mistake in Cycle #1’s Planning stage, it can then easily iterate over the SDLC, and tweak things in Cycle #2’s Planning stage. Agile aims to flexible and developer-friendly.  
 more on Agile: https://en.wikipedia.org/wiki/Agile_software_development  
+Intro to Agile: https://www.youtube.com/watch?v=HlUNaC4sxm8  
+
 A good example of an Agile approach that suits small-scale applications is SCRUM.  
 more on SCRUM: https://en.wikipedia.org/wiki/Scrum_(software_development)  
 
