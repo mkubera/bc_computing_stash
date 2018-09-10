@@ -39,6 +39,8 @@ In a nutshell, **SDLC** involves:
     *	Wireframes
     *	Full designs
     * Navigation map
+    * Flow charts
+    * Logic algorithms
 3.	**Implementation** (Construction)
     *	Coding
     *	Testing
