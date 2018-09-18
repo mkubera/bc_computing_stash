@@ -16,6 +16,11 @@
   * [Non functional requirements](#non-functional-requirements)
   * [Examples of functional requirements of a web app](#examples-of-functional-requirements-of-a-web-app)
   * [Examples of non functional requirements of a web app](#examples-of-non-functional-requirements-of-a-web-app)
+* [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Full designs](#full-visual-designs)
+  * [Navigation map](#navigation-map)
+  * [Flowcharts](#flowcharts)
 * [Types of testing](#types-of-testing)
   *  [Alpha testing](#alpha-testing)
   *  [Beta testing](#beta-testing)
@@ -33,14 +38,14 @@
 In a nutshell, **SDLC** involves:  
 
 1.	**Planning** (Analysis)
+    * Brief
     *	Functional requirements
     *	Non-functional requirements
 2.	**Design**
     *	Wireframes
     *	Full visual designs
     * Navigation map
-    * Flow charts
-    * Logic algorithms
+    * Flow charts (Logic algorithms)
 3.	**Implementation** (Construction)
     *	Coding
     *	Testing
@@ -89,6 +94,56 @@ Read about Waterfall vs Spiral models of systems development + (dis)advantages h
 
 ### Evolutionary prototyping
 > "Exploratory development where the objective of the process is to work with the customer to explore their requirements and deliver a final system. The development starts with the parts of the system that are understood. The system evolves by adding new features proposed by the customer."  
+
+
+## Design
+
+### Wireframes
+> A website wireframe is a visual guide that represents the skeletal framework of a website. The wireframe usually lacks typographic style, color, or graphics, since the main focus lies in functionality, behavior, and priority of content.
+
+**Learning materials**
+* [A Beginner’s Guide to Wireframing](https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399)
+
+**Tools**  
+* [Wireframe.cc](https://wireframe.cc)
+
+
+### Full visual designs
+> Visual design focuses on the aesthetics of a site and its related materials by strategically implementing images, colors, fonts, and other elements.  A successful visual design does not take away from the content on the page or function.  Instead, it enhances it by engaging users and helping to build trust and interest in the brand.
+
+**Learning materials**
+* [Visual Design Basics](https://www.usability.gov/what-and-why/visual-design.html)
+  * A very gentle introduction into web design.
+* [Web Style Guide](https://www.webstyleguide.com/wsg3/7-page-design/3-visual-design.html)
+* [Bright Colors in UI Design: Benefits and Drawbacks](https://uxplanet.org/bright-colors-in-ui-design-benefits-and-drawbacks-433680f0a1c7)
+* [Understanding Visual Hierarchy in Web Design](https://webdesign.tutsplus.com/articles/understanding-visual-hierarchy-in-web-design--webdesign-84)
+
+
+**Tools**  
+* [Krita](https://krita.org/en/download/krita-desktop)
+
+
+### Navigation map
+> Creating an effective website navigation system is a crucial part of ensuring usability, and the success of a web design. Good navigation should be intuitive, easy to use and most importantly help your visitors find the content they’re looking for quickly, without fuss.
+
+**Examples**  
+* [Colour-coded Navigation map](https://jasminjohnwebauthoring.files.wordpress.com/2012/11/site-map-screenshot.png)
+* [Website Design Navigation map](https://creately.com/diagram/example/g35fln5c1/Website+Design)
+* [Personal Page Navigation map](https://creately.com/diagram/example/go438cyo3/Personal+Page+Sitemap)
+* [22 great examples of website navigation](https://www.creativebloq.com/web-design/website-navigation-4132549)
+
+
+### Flowcharts
+> A flowchart is a type of diagram that represents an algorithm, workflow or process. The flowchart shows the steps as boxes of various kinds, and their order by connecting the boxes with arrows. This diagrammatic representation illustrates a solution model to a given problem. Flowcharts are used in analyzing, designing, documenting or managing a process or program in various fields.
+
+![Lamp flowchart](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/220px-LampFlowchart.svg.png)
+
+**Learning materials**  
+* [Ultimate Flowchart Guide ( Complete Flowchart Tutorial with Examples )](https://creately.com/blog/diagrams/flowchart-guide-flowchart-tutorial/)
+  * An excellent, comprehensive guide to flowcharts.
+
+**Tools**  
+* [Draw.io](https://www.draw.io/)
 
 
 ## Requirements
