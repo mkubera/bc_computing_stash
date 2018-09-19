@@ -16,6 +16,8 @@
   * [Non functional requirements](#non-functional-requirements)
   * [Examples of functional requirements of a web app](#examples-of-functional-requirements-of-a-web-app)
   * [Examples of non functional requirements of a web app](#examples-of-non-functional-requirements-of-a-web-app)
+* [Planning](#planning)
+  * [Brief](#brief)
 * [Design](#design)
   * [Wireframes](#wireframes)
   * [Full designs](#full-visual-designs)
@@ -94,6 +96,23 @@ Read about Waterfall vs Spiral models of systems development + (dis)advantages h
 
 ### Evolutionary prototyping
 > "Exploratory development where the objective of the process is to work with the customer to explore their requirements and deliver a final system. The development starts with the parts of the system that are understood. The system evolves by adding new features proposed by the customer."  
+
+
+## Planning
+
+### Brief
+> A design brief is a written document that summarizes all the relevant information about a project. As it includes an outlined strategy for the project, it’s an essential piece you need to have before starting any design work.  
+>
+> A brief sets the guidelines of a project, including background information, goals, requirements and technical directives so that every person involved in it can work towards the same purpose and find the information he needs in order to achieve it.  
+>
+> The word brief is defined as something “of short duration”. In other industries, like advertising, the brief is sometimes required to be as short as it can be. But the length of such a document will actually vary according to each designer, project and client. I wouldn’t worry about the length as long as it’s clear, understandable and provides the elements you need in order to take the project to a good end (no less, no more).  
+>
+> Typically, every web design project starts with a brief. Sometimes your client will send the first version with their requirements, but most of the times it’ll be you (the designer or the agency) who writes this kind of document.
+
+**Learning materials**
+* [How to Write a Website Design Brief](https://artisanthemes.io/write-website-design-brief/)
+* [HeliosDesign Sample Website Brief](http://www.heliosdesign.co.za/export/sites/helios/content/common/HeliosDesign_Sample_Website_Brief.pdf)
+
 
 
 ## Design
