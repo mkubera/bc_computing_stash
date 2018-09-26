@@ -33,7 +33,7 @@
   *  [Automated unit testing](#automated-unit-testing)
 * [Unified Modeling Language](#unified-modeling-language)
   * [UML](#uml)
-  * [UML diagrams](#uml-diagrams)
+  * [UML types of diagrams](#uml-types-of-diagrams)
 
 ## Software Development LifeCycle
 
@@ -68,11 +68,14 @@ In case you wondered, companies have their own unique SDLCs because these are no
 **Agile** is a process often used in start-ups and modern tech companies. Its aim is to develop applications quickly and be able to adapt to changing requirements (from the client, for example) all the time.  
 It’s called **iterative** because it’s developed in iterations. It starts as a small app (Planned, Designed, Developed, Tested), and then the team iterates over it to enhance it (again, Planning, Designing, Developing, Testing).  
 Iteration allows to go back in the process, meaning that if the team makes a mistake in Cycle #1’s Planning stage, it can then easily iterate over the SDLC, and tweak things in Cycle #2’s Planning stage. Agile aims to flexible and developer-friendly.  
+**Agile** is **a rapid** app development methodology.  
 more on Agile: https://en.wikipedia.org/wiki/Agile_software_development  
 Intro to Agile: https://www.youtube.com/watch?v=HlUNaC4sxm8  
 
 A good example of an Agile approach that suits small-scale applications is SCRUM.  
-more on SCRUM: https://en.wikipedia.org/wiki/Scrum_(software_development)  
+more on SCRUM: 
+* [Scrum @wikipedia](https://en.wikipedia.org/wiki/Scrum_(software_development))
+* [Introduction to Scrum](https://www.youtube.com/watch?v=9TycLR0TqFA) (only watch 00:00-03:00)
 
 ### Waterfall
 **Waterfall** is the old way of doing things, it’s still in use, but is falling out of fashion as it’s too slow to respond to software’s changing requirements.  
@@ -82,6 +85,7 @@ more on Waterfall: https://en.wikipedia.org/wiki/Waterfall_model
 
 ### Spiral
 **Spiral** is just Waterfall but repeated over and over again.  
+Just like **Agile**, **Spiral** is a **rapid** app development methodology.  
 more on Spiral: https://en.wikipedia.org/wiki/Spiral_model  
 
 ### Further reading
@@ -91,11 +95,11 @@ Read about Waterfall vs Spiral models of systems development + (dis)advantages h
 
 ## Prototype revolutionary vs evolutionary
 
-### Revolutionary prototyping
-> "Revolutionary, pr "Throwaway", prototyping is where the objective of the evolutionary development process is to understand the customer's requirements and hence develop a better requirements definition for the system. The prototype concentrates on experimenting with the customer requirements that are poorly understood."
-
 ### Evolutionary prototyping
-> "Exploratory development where the objective of the process is to work with the customer to explore their requirements and deliver a final system. The development starts with the parts of the system that are understood. The system evolves by adding new features proposed by the customer."  
+> Exploratory development where the objective of the process is to work with the customer to explore their requirements and deliver a final system. The development starts with the parts of the system that are understood. The system gradually evolves into a finished application by adding new features proposed by the customer.  
+
+### Revolutionary prototyping
+> Revolutionary, or "Throwaway", prototyping is where the objective is to understand the customer's requirements and hence develop a better requirements definition for the system. The prototype concentrates on experimenting with the customer requirements that are poorly understood. It is called "throwaway" because it is a model used to test only aspects of an application.  
 
 
 ## Planning
@@ -221,5 +225,5 @@ Unified Modeling Language (UML).
 ### UML
 https://en.wikipedia.org/wiki/Unified_Modeling_Language
 
-### UML diagrams
-https://en.wikipedia.org/wiki/Unified_Modeling_Language#Diagrams
+### UML types of diagrams
+https://www.smartdraw.com/uml-diagram/#UMLTypes
