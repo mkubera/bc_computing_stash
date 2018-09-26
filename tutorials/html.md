@@ -67,7 +67,7 @@ Feel free to copy/paste it, and use as a skeleton for your web pages.
 </head>
 <body>
 
-  <div id="wrapper">
+  <div id="Wrapper">
     <nav>
       <!-- Navigation bar
       Links to web pages of your site will go here... -->
