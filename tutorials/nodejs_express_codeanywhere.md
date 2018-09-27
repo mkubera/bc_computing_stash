@@ -201,9 +201,9 @@ HTTP requests (usually sent by the browser) are stateless, meaning that accessin
 From our point of view, though, that's just one user. And, often, we need to be able to keep the state of the user (typical example would include: `isUserAuthenticated` `==` `true`/`false`). For that reason, we need to store a session for each user.  
 
 By now you should know how to install npm (Node Package Manager) packages. For our needs, we will be using [express-session](https://www.npmjs.com/package/express-session) package.  
-What this package does, in a nutshell is:  
-1. Stores session data in a chosen storage (`MemoryStore` by default, meaning it stores data in memory).
-2. Creates cookie on the client-side with a Session ID only.
+What this package does, in a nutshell, is:  
+1. Stores session data in a chosen storage on the server (`MemoryStore` by default, meaning: it stores data in memory).
+2. Creates cookie on the client with a Session ID only.
 
 ### Initiating session middleware
 
@@ -247,7 +247,7 @@ req.session.username;  // if no 'username' was saved prior to accessing it, you 
 
 ### Modifying the session object
 
-Again, it's pretty basic JavaScript. You can modify or add a property to `req.session` object like so:
+Again, it's pretty basic JavaScript. You can modify a property or add it to `req.session` object like so:
 ```
 req.session.username = "Gregory McPeanut";
 req.session.age = 33;
