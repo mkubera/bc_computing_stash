@@ -55,6 +55,9 @@ Pay attention to the table with 4 examples: https://www.w3schools.com/html/html_
 ### Typical structure of HTML document
 
 Feel free to copy/paste it, and use as a skeleton for your web pages.   
+This template makes two assumptions:
+1. Your main CSS file has this path: `css/main.css`
+2. Your main JS file has this path: `js/main.js`
 
 ```
 <!DOCTYPE html>
@@ -64,6 +67,7 @@ Feel free to copy/paste it, and use as a skeleton for your web pages.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -97,6 +101,7 @@ Feel free to copy/paste it, and use as a skeleton for your web pages.
     </footer>
   </div>
   
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
 ```
