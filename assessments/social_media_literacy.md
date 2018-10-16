@@ -7,6 +7,8 @@ This Assessment is done in groups, however, every task is done individually.
 1. Three, once having 15 forum threads, write at least one comment (forum post) about a member of your team created (not you), and discuss his/her findings.  
 1. Fourth, finally, have one of your team members (or you) create a new topic with the issue provided (you will find it at the end of this text). Discuss it among yourselves. Each student should write at least 1 post.
 
+Describing your findings, try to use as professional language as possible. Always use your own words, but feel free to use quotations and links to other sources.  
+
 Check this thread (an example) to understand how to go about things: http://bc-nc-comp-18-19.forumotion.com/f4-group-x-an-example. If you are unsure what to do, ask your Lecturer.
 
 
