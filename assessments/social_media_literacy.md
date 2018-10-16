@@ -9,7 +9,7 @@ This Assessment is done in groups, however, every task is done individually.
 
 Describing your findings, try to use as professional language as possible. Always use your own words, but feel free to use quotations and links to other sources.  
 
-Check this thread (an example) to understand how to go about things: http://bc-nc-comp-18-19.forumotion.com/f4-group-x-an-example. If you are unsure what to do, ask your Lecturer.
+Check this thread (an example) to understand how to go about things: https://moodle.borderscollege.ac.uk/mod/forum/discuss.php?d=3042. If you are unsure what to do, ask your Lecturer.
 
 
 # Topics
@@ -146,4 +146,11 @@ https://www.rd.com/culture/10-social-networking-sites-that-could-replace-faceboo
 # Issue: Advantages vs Disadvantages of Social Media for Society
 
 Discuss the issue on forums within your group.
-http://bc-nc-comp-18-19.forumotion.com/
+https://moodle.borderscollege.ac.uk/mod/forum/view.php?id=192246  
+
+When creating a new discussion topic, follow this pattern:
+Group X: topic_number_and_name  
+
+for example, if your group is **Group A**, and your chosen topic is **13 how social media makes money**, create a topic like this:  
+Group A: 13 how social media makes money
+
