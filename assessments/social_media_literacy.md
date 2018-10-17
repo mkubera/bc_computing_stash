@@ -22,13 +22,20 @@ Describing your findings, try to use as professional language as possible. Alway
 Check this thread (an example) to understand how to go about things: https://moodle.borderscollege.ac.uk/mod/forum/discuss.php?d=3042. If you are unsure what to do, ask your Lecturer.
 
 
-# Before you begin (3d,3f)
+# Before you begin 
 
-## Use social media is safe and responsible (3e)
+## Use social media mindfully (3d)
+
+Make sure you use social media mindfully: https://www.mindbodygreen.com/articles/mindful-social-media
+
+## Use of social media is safe and responsible (3e)
 
 Make sure you understand how to use the forums (and other social media) safely: https://carleton.ca/its/2016/social-media-safety/  
 And responsibly: https://sdvirtualschools.com/how-to-use-social-media-responsibly/
 
+## Customize social media (incl. privacy and security settings) (3f)
+
+On Moodle you can customize your personal settings. Top right corner of the screen > click on your avatar/name > choose Preferences.
 
 
 # Topics
