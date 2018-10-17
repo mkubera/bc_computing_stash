@@ -1,3 +1,4 @@
+# Table of contents
 
 * [Instructions](#instructions)
 * [Topics](#topics)
