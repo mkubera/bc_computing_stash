@@ -24,7 +24,7 @@ Check this thread (an example) to understand how to go about things: https://moo
 
 # Topics
 
-## 1 the historical development of social media
+## 1 the historical development of social media (1a)
 
 Social networking:
 * https://www.digitaltrends.com/features/the-history-of-social-networking/
@@ -33,7 +33,7 @@ Virtual worlds:
 * https://appreal-vr.com/blog/virtual-reality-and-its-kinds/
 
 
-## 2 types of social media such as social networks, blogs, wikis, virtual worlds and games
+## 2 types of social media such as social networks, blogs, wikis, virtual worlds and games (1b)
 
 Social networks, forums, blogs:
 https://blog.hootsuite.com/types-of-social-media/
@@ -45,7 +45,7 @@ Virtual worlds:
 https://www.vrs.org.uk/virtual-reality-games/what-are-virtual-worlds.html
 
 
-## 3 the personal and community uses of social media
+## 3 the personal and community uses of social media (1d, 2b)
 
 https://www.techmaish.com/advantages-and-disadvantages-of-social-media-for-society/
 
@@ -53,7 +53,7 @@ Digital footprint:
 https://www.internetsociety.org/tutorials/your-digital-footprint-matters/
 
 
-## 4 your rights and responsibilities
+## 4 your rights and responsibilities (2a)
 
 Rights & responsibilities:
 http://www.astonbond.co.uk/your-rights-social-media-law/
@@ -67,6 +67,7 @@ https://www.themuse.com/advice/5-easy-ways-you-can-boost-your-social-media-prese
 ## Businesses
 * [4 Ways To Boost Your Social Media Presence](https://www.entrepreneur.com/article/251539)
 * [Dominate Facebook With This $5 Marketing Strategy](https://www.entrepreneur.com/article/251373)
+
 
 ## 6 what’s meant by ‘social intelligence’, ‘social production’ and ‘social capital’ (1c)
 
