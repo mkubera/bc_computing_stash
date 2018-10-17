@@ -6,12 +6,16 @@
 
 # Instructions
 
-This Assessment is done in groups, however, every task is done individually.  
+This Assessment is done in groups. However, every task is done individually.  
 
-1. First, work in groups of 5 (in your row).  
-1. Second, each member of the group picks up 3 topics, reads about them, and creates one forum topic (for each topic), writing about his/her findings. (The list of topics is below.)
-1. Three, once having 15 forum threads, write at least one comment (forum post) about a member of your team created (not you), and discuss his/her findings.  
-1. Fourth, finally, have one of your team members (or you) create a new topic with the issue provided (you will find it at the end of this text). Discuss it among yourselves. Each student should write at least 1 post.
+1. **First**, work in groups of 5 (in your row, in the classroom).  
+1. **Second**, each member of the group:
+    * picks up 3 topics, 
+    * researches them (reads about them & gathers information), 
+    * and (for each chosen topic) creates one forum topic, writing about his/her findings. 
+    * (The list of topics is below.)
+1. **Three**, once having 15 forum topics, every student writes at least one comment (forum post) in a chosen topic created by one of student's team members.  
+1. **Fourth**, finally, one student in each group creates a new topic in which the group will be discussing the issue provided ([Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)). All members of the group are expected to contribute to this forum topic on a weekly basis (finding new information, new articles, new videos, on the matter). For example, a UK newspaper reports on a malign usage of social media. A student writes about the article and adds a link to the article so others can read about it as well. Then, the group discusses it (on the forums).
 
 Describing your findings, try to use as professional language as possible. Always use your own words, but feel free to use quotations and links to other sources.  
 
@@ -45,6 +49,9 @@ https://www.vrs.org.uk/virtual-reality-games/what-are-virtual-worlds.html
 
 https://www.techmaish.com/advantages-and-disadvantages-of-social-media-for-society/
 
+Digital footprint:
+https://www.internetsociety.org/tutorials/your-digital-footprint-matters/
+
 
 ## 4 your rights and responsibilities
 
@@ -52,12 +59,16 @@ Rights & responsibilities:
 http://www.astonbond.co.uk/your-rights-social-media-law/
 
 
-## 5 how to improve your social media presence
+## 5 how to improve your social media presence (1d)
 
+## Individuals and groups
 https://www.themuse.com/advice/5-easy-ways-you-can-boost-your-social-media-presence-and-make-yourself-look-more-credible
 
+## Businesses
+* [4 Ways To Boost Your Social Media Presence](https://www.entrepreneur.com/article/251539)
+* [Dominate Facebook With This $5 Marketing Strategy](https://www.entrepreneur.com/article/251373)
 
-## 6 what’s meant by ‘social intelligence’, ‘social production’ and ‘social capital’
+## 6 what’s meant by ‘social intelligence’, ‘social production’ and ‘social capital’ (1c)
 
 ### 6a social intelligence
 
@@ -91,7 +102,7 @@ Social capital is the value that comes from social networks, or groupings of peo
 read more on https://www.takingcharge.csh.umn.edu/activities/examples-social-capital
 
 
-## 7 when to use (and not use) social media
+## 7 when to use (and not use) social media (1d, 2c)
 
 Reasons to use: https://www.onepoll.com/10-reasons-people-use-social-media/
 
@@ -99,13 +110,13 @@ Reasons not to use:
 https://soapboxie.com/social-issues/Reasons-Not-to-Use-Social-Media
 
 
-## 8 how to avoid the dangers of social media
+## 8 how to avoid the dangers of social media (2c)
 
 Dangers:
 https://www.care.com/c/stories/4275/5-dangers-of-social-media-to-discuss-with-you/
 
 
-## 9 how to protect yourself
+## 9 how to protect yourself (2c)
 
 Protect yourself:
 https://securingtomorrow.mcafee.com/consumer/family-safety/10-tips-protect-social-networks/
@@ -117,14 +128,27 @@ https://securingtomorrow.mcafee.com/consumer/family-safety/10-tips-protect-socia
 https://www.zdnet.com/article/twenty-two-power-laws-of-the-emerging-social-economy/
 
 
-## 11 dos and don’ts of using social media
+## 11 dos and don’ts of using social media (2c)
 
 Some Dos and Don'ts:
 https://www.stewardship.com/articles/10-dos-and-don-ts-for-a-positive-social-media-experience
 Do you agree with them?
 
 
-## 12 using social media for learning
+## 12 using social media for learning (1e)
+
+## Personal Learning Network (PLN)
+
+"Personal Learning Networks have been around for some time.  The idea of a PLN is simply a network of people and resources through which you learn and grow."  
+
+and  
+
+"A student personal learning network is, therefore, a rich and ever-growing series of connections with people, resources, and communities around the world…connections that allow us to grow in knowledge, skill, ability and perspective. "  
+
+read more on http://etale.org/main/2013/11/22/helping-students-develop-personal-learning-networks/
+
+
+## Others
 
 Virtual worlds:
 * https://www.opencolleges.edu.au/informed/features/top-20-uses-of-virtual-worlds-in-education/
@@ -135,7 +159,7 @@ Virtual worlds:
 https://www.investopedia.com/stock-analysis/032114/how-facebook-twitter-social-media-make-money-you-twtr-lnkd-fb-goog.aspx
 
 
-## 14 the implications of social media for society
+## 14 the implications of social media for society (2d)
 
 Impact:
 https://www.theodysseyonline.com/social-medias-impact-society
