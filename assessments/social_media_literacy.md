@@ -179,7 +179,7 @@ https://www.rd.com/culture/10-social-networking-sites-that-could-replace-faceboo
 Discuss the issue on forums within your group.
 https://moodle.borderscollege.ac.uk/mod/forum/view.php?id=192246  
 
-When creating a new discussion topic, follow this pattern:
+When creating a new discussion topic, follow this pattern:  
 Group X: topic_number_and_name  
 
 for example, if your group is **Group A**, and your chosen topic is **13 how social media makes money**, create a topic like this:  
