@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Instructions](#instructions)
+* [Before you begin](#before-you-begin)
 * [Topics](#topics)
 * [Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)
 
