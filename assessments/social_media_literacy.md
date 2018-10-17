@@ -1,3 +1,8 @@
+
+* [Instructions](#instructions)
+* [Topics](#topics)
+* [Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)
+
 # Instructions
 
 This Assessment is done in groups, however, every task is done individually.  
