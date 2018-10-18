@@ -23,6 +23,8 @@
 * [Body parsing aka parsing web forms data](#body-parsing-aka-parsing-web-forms-data)
   * [Web forms](#web-forms)
   * [Parsing data on the server](#parsing-data-on-the-server)
+    * [Setup](#setup)
+    * [Usage](#usage)
 
 
 
@@ -270,4 +272,85 @@ If you need help understanding sessions, let your Lecturer know. But before you 
 
 ### Web forms
 
+Web forms are ways of sending data from the browser to the server.  
+Forms have various input types, such as `text`, `radio`, `checkbox`, `textarea`.  
+
+As a matter of fact, you have been filling in forms a lot on the web. Whenever you sign up or log in, you fill up a form. If you change your settings on a site, you fill up a form. When you take a survey, or simply write a new post or a comment. It's all forms.  
+
+At the simplest, the form consists of `<form></form>` tag, at least one `<input>` tag and a `<button type='submit'></button>` tag.  
+
+Look at this example:  
+```
+  <form method='POST' action='/name'>
+    <input type='text' name='name' placeholder='What's your name, amigo/a?'>
+    <button type='submit'>send</button>
+  </form>
+```
+1. `<form>` comes with two attributes:
+    * `method`, which is almost always `POST` because we will be "posting" data to the server
+    * `action`, which is the route we will be targetting on the server
+1. `<input>` field comes with many attributes, but these are the core ones:
+    * `type`, which is usually `text`, but can also be `radio` or `checkbox` (try them out to see what they do)
+    * `name`, which will become a property of `req.body` object on the server (e.g. if we have `name='name'`, we will be able to access user's input using `req.body.name` (don't worry if you don't get it now, the next chapter explains it in detail).
+    * `placeholder`, which is a helpful way to let the user understand what we want them to type.
+1. `<button>` comes with just one attribute:
+    * `type='submit'`, which tells the form that when the button is clicked, the form should be send to the route specificed in `<form>`'s `action` attribute.
+    
+That's all you need to submit a form to the server.  
+
+Read more about forms: https://www.w3schools.com/html/html_forms.asp
+
 ### Parsing data on the server
+
+#### Setup
+
+To parse data from web forms on the server, we need to add `body-parser` module to our application.
+
+1. Open the SSH Terminal/Console.
+1. Make sure you are in the root folder of your app.
+1. Install the module: `npm install --save body-parser`.
+1. In your `index.js` file add these lines of code:
+```
+const bodyParser = require('body-parser');
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+```
+Make sure that your code for routes is below these lines.  
+
+Now you are all set up and ready to go.  
+
+#### Usage
+
+Let's use the super simple form from before. It has just one `input` field, `name`.  
+The form (using `action` attribute) hits a `POST` route on the server, `/name`.  
+
+Let's grab the data on the server.  
+
+First, create a `POST` route, like so:
+```
+app.post('/test', (req, res) => {
+
+})
+```
+
+Then, access the data sent from the browser using `req.body`.
+```
+app.post('/test', (req, res) => {
+  console.log(req.body)       // req.body is where all the data sent from the browser live
+  console.log(req.body.name)  // req.body.name will give us the value sent from the browser (it will of type String)
+                              // so if the user typed "John", we will get a string "John"
+})
+```
+
+Respond with something meaningful. At minimum we want to give the user a confirmation that the data was received successfully.
+```
+app.post('/test', (req, res) => {
+  console.log(req.body)       // req.body is where all data sent from the browser live
+  console.log(req.body.name)  // req.body.name will give us the value sent from the browser (it will of type String)
+                              // so if the user typed "John", we will get a string "John"
+  res.send("We have received your name successfully. Thanks.")
+})
+```
+
+In reality, we would rather show the user some sort of a nice confirmation page (using `res.render()`, rather than `res.send()`), but for the purpose of this tutorial, the above is enough.
