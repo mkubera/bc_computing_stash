@@ -13,12 +13,10 @@ This Assessment is done in groups. However, every task is done individually.
 1. **Second**, each member of the group:
     * picks up 3 topics, 
     * researches them (reads about them & gathers information), 
-    * and (for each chosen topic) creates one forum topic, writing about his/her findings. 
+    * and (for each chosen topic) creates one forum topic, writing about his/her findings. Make sure that in your explanations you use your own words, the correct definitions and terminology, and that you reference (link to) any quotations and sources that you use and take from.
     * (The list of topics is below.)
 1. **Three**, once having written all 15 forum topics across your group, every student writes at least one comment (forum post) in a chosen topic created by one of the student's group members.  
-1. **Fourth**, finally, one student in each group creates a new topic in which the group will be discussing the issue provided ([Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)). All members of the group are expected to contribute to this forum topic on a weekly basis (finding new information, new articles, new videos, on the matter). For example, a UK newspaper reports on a malign usage of social media. A student writes about the article and adds a link to the article so others can read about it as well. Then, the group discusses it (on the forums).
-
-Describing your findings, try to use as professional language as possible. Always use your own words, but feel free to use quotations and links to other sources.  
+1. **Fourth**, as a group choose a social media platform (for example: a wiki or a blog with advanced features such as adding different media (files, videos, audio, links to other websites, etc.). You need to ensure that the use of the social media platform is safe and responsible, and that you properly adjust your privacy and security features. Using the chosen social media platform you will be discussing the issue provided ([Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)) within your group. All members of the group are expected to contribute to this discussion on a weekly basis (finding new information, new articles, new videos, on the matter). For example, a UK newspaper reports on a malign usage of social media. A student writes about the article and adds a link to the article so others can read about it as well. Then, the group discusses it using the social media platform (commenting). Feel free to include audio, video, and other media in your contributions. 
 
 Check this thread (an example) to understand how to go about things: https://moodle.borderscollege.ac.uk/mod/forum/discuss.php?d=3042. If you are unsure what to do, ask your Lecturer.
 
@@ -31,12 +29,14 @@ Make sure you use social media mindfully: https://www.mindbodygreen.com/articles
 
 ## Use of social media is safe and responsible (3e)
 
-Make sure you understand how to use the forums (and other social media) safely: https://carleton.ca/its/2016/social-media-safety/  
+Make sure you understand how to use the forums (and other social media platforms) safely: https://carleton.ca/its/2016/social-media-safety/  
 And responsibly: https://sdvirtualschools.com/how-to-use-social-media-responsibly/
 
 ## Customize social media (incl. privacy and security settings) (3f)
 
-On Moodle you can customize your personal settings. Top right corner of the screen > click on your avatar/name > choose Preferences.
+On Moodle you can customize your personal settings. Top right corner of the screen > click on your avatar/name > choose Preferences.  
+
+Discussing the Issue (on your chosen social media platform), you will have to find and adjust the settings yourself.
 
 
 # Topics
