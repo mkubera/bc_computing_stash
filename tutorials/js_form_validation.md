@@ -232,7 +232,8 @@ To validate the form, we need to create a condition. The condition will check if
 ```
 
 The proper way to read it in a human language-like fashion is this:  
-*If the username is empty (`username === ""`) OR neither gender male nor gender female is clicked (`(!genderM && !genderF)`) OR terms & conditions are not ticked (`!tandc`)* then log `"not valid"` into the console.
+*If the username is empty (`username === ""`) OR neither gender male nor gender female is clicked (`(!genderM && !genderF)`) OR terms & conditions are not ticked (`!tandc`)* then log `"not valid"` into the console.  
+`!` in JS reverts the Boolean value. So `!tandc` means not `true`/`false`. If `tandc` is `true`, this then becomes `!true` (not `true`). `!true` is equal to `false`.
 
 Your code should now look like this:
 
@@ -263,4 +264,157 @@ Your code should now look like this:
       }
     })
 ```
+
+
+## Display a nice message (error or success) to user
+
+First, we need to ready our HTML to show either an error or a success message to user. We will achieve it by hiding and showing HTML elements. For that, we will utilise a simple CSS `.hidden` class. For simplicity's sake, we will write our CSS inside HTML (normally, you would use an external (linked) stylesheet).
+
+First, let's create the `.hidden` class. We need to add a `<style>` tag to `<head>`, like so:
+
+```
+  <style>
+    .hidden { display: none; }
+  </style>
+```
+
+Your `<head>` tag should now look like this:
+
+```
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+```
+
+Second, we need two HTML elements/tags to display error and success messages. We can use simple `<div`s for that. Let's create two of them inside `<div id="Wrapper">`.
+
+```
+    <div id="ErrorMsg" class="hidden">Error. Make sure to fill in all the fields in the form.</div>
+    <div id="SuccessMsg" class="hidden">Success! Thanks for submitting your form.</div>
+```
+
+Notice how each `<div>` has the `hidden` class attached to it. This way these elements will be hidden when user first sees the form. We will be showing them conditionally using the form validation.
+
+The `Wrapper` `<div>` should now look like that:
+
+```
+  <div id="Wrapper">
+
+    <div id="ErrorMsg" class="hidden">Error. Make sure to fill in all the fields in the form.</div>
+    <div id="SuccessMsg" class="hidden">Success! Thanks for submitting your form.</div>
+
+    <form>
+
+      <input id="InputUsername" type="text" placeholder="username"><br>
+      <input id="InputGenderM" type="radio" name="gender"> Male
+      <input id="InputGenderF" type="radio" name="gender"> Female <br>
+      <input id="InputTandC" type="checkbox"> I agree to the Terms and Conditions <br>
+      <input id="SubmitButton" type="submit" value="submit">
+
+    </form>
+
+  </div>
+```
+
+Third, we need JS to conditionally show the right message to user.  
+
+First, let's target the message tags:
+
+```
+    var errorMsg = document.querySelector('#ErrorMsg'); // targets the error message
+    var successMsg = document.querySelector('#SuccessMsg'); // targets the success message
+```
+
+Your JS code inside `<script>` tag should now look like this:
+
+```
+    var submitButton = document.querySelector('#SubmitButton'); // targets the submit button
+    var inputUsername = document.querySelector('#InputUsername'); // targets the username input
+    var inputGenderM = document.querySelector('#InputGenderM'); // targets the male gender input
+    var inputGenderF = document.querySelector('#InputGenderF'); // targets the female gender input
+    var inputTandC = document.querySelector('#InputTandC'); // targets the TandC input
+    var errorMsg = document.querySelector('#ErrorMsg'); // targets the error message
+    var successMsg = document.querySelector('#SuccessMsg'); // targets the success message
+
+    submitButton.addEventListener('click', function(event) {
+      event.preventDefault(); // prevents the form from being sent to the server
+                             // (keeps it client/browser-side and prevents
+                             // the browser from awkward reloading)
+
+      var username = inputUsername.value; // the value will be a String
+      var genderM = inputGenderM.checked; // the value will be a Boolean
+      var genderF = inputGenderF.checked; // the value will be a Boolean
+      var tandc = inputTandC.checked; // the value will be a Boolean
+
+      console.log([username, genderM, genderF, tandc]);
+
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+      } else {
+        console.log("valid");
+      }
+    })
+```
+
+Now, let's conditionally show/hide the messages.
+
+```
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+        errorMsg.classList.remove('hidden');
+        successMsg.classList.add('hidden');
+      } else {
+        console.log("valid");
+        errorMsg.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+      }
+```
+
+Every HTML tag/element has a `classList` (a list of CSS classes attached to it). We can, using JS, `add` and `remove` classes from this list. That's what we do when we `errorMsg.classList.remove(...)` and `successMsg.classList.add(...)`. If you wonder where do these properties (`classList`) and methods (`add()`, `remove()`) come from, they are part of JS Web API. Check the [element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) for more information.
+
+The JS code should now look like this:
+
+```
+    var submitButton = document.querySelector('#SubmitButton'); // targets the submit button
+    var inputUsername = document.querySelector('#InputUsername'); // targets the username input
+    var inputGenderM = document.querySelector('#InputGenderM'); // targets the male gender input
+    var inputGenderF = document.querySelector('#InputGenderF'); // targets the female gender input
+    var inputTandC = document.querySelector('#InputTandC'); // targets the TandC input
+    var errorMsg = document.querySelector('#ErrorMsg'); // targets the error message
+    var successMsg = document.querySelector('#SuccessMsg'); // targets the success message
+
+    submitButton.addEventListener('click', function(event) {
+      event.preventDefault(); // prevents the form from being sent to the server
+                             // (keeps it client/browser-side and prevents
+                             // the browser from awkward reloading)
+
+      var username = inputUsername.value; // the value will be a String
+      var genderM = inputGenderM.checked; // the value will be a Boolean
+      var genderF = inputGenderF.checked; // the value will be a Boolean
+      var tandc = inputTandC.checked; // the value will be a Boolean
+
+      console.log([username, genderM, genderF, tandc]);
+
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+        errorMsg.classList.remove('hidden');
+        successMsg.classList.add('hidden');
+      } else {
+        console.log("valid");
+        errorMsg.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+      }
+    })
+```
+
+
 
