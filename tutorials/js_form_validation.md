@@ -417,4 +417,92 @@ The JS code should now look like this:
 ```
 
 
+## Make it a little bit prettier for the user
 
+Let's add a tiny bit of CSS to make it nicer for the user.  
+
+Add these CSS rules to your `<style>` tag:
+
+```
+    .msg-error, .msg-success { padding: 10px; margin: 10px 0; color: #fff; }
+    .msg-error { background-color: red; }
+    .msg-success { background-color: blue; }
+```
+
+## Full code
+
+This is what the full code should look like:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .hidden { display: none; }
+    .msg-error, .msg-success { padding: 10px; margin: 10px 0; color: #fff; }
+    .msg-error { background-color: red; }
+    .msg-success { background-color: blue; }
+  </style>
+</head>
+<body>
+
+  <div id="Wrapper">
+
+    <div id="ErrorMsg" class="hidden msg-error">Error. Make sure to fill in all the fields in the form.</div>
+    <div id="SuccessMsg" class="hidden msg-success">Success! Thanks for submitting your form.</div>
+
+    <form>
+
+      <input id="InputUsername" type="text" placeholder="username"><br>
+      <input id="InputGenderM" type="radio" name="gender"> Male
+      <input id="InputGenderF" type="radio" name="gender"> Female <br>
+      <input id="InputTandC" type="checkbox"> I agree to the Terms and Conditions <br>
+      <input id="SubmitButton" type="submit" value="submit">
+
+    </form>
+
+  </div>
+
+  <script>
+
+    var submitButton = document.querySelector('#SubmitButton'); // targets the submit button
+    var inputUsername = document.querySelector('#InputUsername'); // targets the username input
+    var inputGenderM = document.querySelector('#InputGenderM'); // targets the male gender input
+    var inputGenderF = document.querySelector('#InputGenderF'); // targets the female gender input
+    var inputTandC = document.querySelector('#InputTandC'); // targets the TandC input
+    var errorMsg = document.querySelector('#ErrorMsg'); // targets the error message
+    var successMsg = document.querySelector('#SuccessMsg'); // targets the success message
+
+    submitButton.addEventListener('click', function(event) {
+      event.preventDefault(); // prevents the form from being sent to the server
+                             // (keeps it client/browser-side and prevents
+                             // the browser from awkward reloading)
+
+      var username = inputUsername.value; // the value will be a String
+      var genderM = inputGenderM.checked; // the value will be a Boolean
+      var genderF = inputGenderF.checked; // the value will be a Boolean
+      var tandc = inputTandC.checked; // the value will be a Boolean
+
+      console.log([username, genderM, genderF, tandc]);
+
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+        errorMsg.classList.remove('hidden');
+        successMsg.classList.add('hidden');
+      } else {
+        console.log("valid");
+        errorMsg.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+      }
+    })
+
+  </script>
+</body>
+</html>
+
+```
