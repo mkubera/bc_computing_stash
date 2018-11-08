@@ -216,5 +216,51 @@ If you haven't touched the form, the output should be something like this:
 Meaning that the username field is empty (`""`), and both radios and the checkbox are not checked (`false`).
 
 
+## JS: Validate the form
 
+Good. We are now ready to validate the form.  
+
+To validate the form, we need to create a condition. The condition will check if all the gathered inputs are correct. If they are not, it will say `"not valid"`. If they are, it will say `"valid"`. We will do it like so:
+
+```
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+      } else {
+        console.log("valid");
+      }
+```
+
+The proper way to read it in a human language-like fashion is this:  
+*If the username is empty (`username === ""`) OR neither gender male nor gender female is clicked (`(!genderM && !genderF)`) OR terms & conditions are not ticked (`!tandc`)* then log `"not valid"` into the console.
+
+Your code should now look like this:
+
+```
+    var submitButton = document.querySelector('#SubmitButton'); // targets the submit button
+    var inputUsername = document.querySelector('#InputUsername'); // targets the username input
+    var inputGenderM = document.querySelector('#InputGenderM'); // targets the male gender input
+    var inputGenderF = document.querySelector('#InputGenderF'); // targets the female gender input
+    var inputTandC = document.querySelector('#InputTandC'); // targets the TandC input
+
+    submitButton.addEventListener('click', function(event) {
+      event.preventDefault(); // prevents the form from being sent to the server
+                             // (keeps it client/browser-side and prevents
+                             // the browser from awkward reloading)
+
+      var username = inputUsername.value; // the value will be a String
+      var genderM = inputGenderM.checked; // the value will be a Boolean
+      var genderF = inputGenderF.checked; // the value will be a Boolean
+      var tandc = inputTandC.checked; // the value will be a Boolean
+
+      console.log([username, genderM, genderF, tandc]);
+
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+      } else {
+        console.log("valid");
+      }
+    })
+```
 
