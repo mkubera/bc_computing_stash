@@ -97,7 +97,7 @@ Let's now create the most basic web server using Express framework.
 
 ## Create your first route and employ a Nodemon daemon
 
-Routes are server's API. They specify what happens when someone (or something) accesses a specific url (e.g. http://example.com/about). In this case `/about` is a route. It has to respond with something, otherwise user will see an error message (404).  
+Routes are server's API. They specify what happens when someone (or something) accesses a specific url (e.g. http://example.com/about). In this case `/about` is a route. It has to respond with something, otherwise user will see an error message ([404](https://en.wikipedia.org/wiki/HTTP_404)).  
 
 1 Go to your `index.js` file.  
 2 Copy L5 (line 5).  
