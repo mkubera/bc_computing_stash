@@ -14,6 +14,7 @@
 * [Codeanywhere. Step 5: Working web server and Hello World](#codeanywhere-step-5-working-web-server-and-hello-world)
 * [Create your first route and employ a Nodemon daemon](#create-your-first-route-and-employ-a-nodemon-daemon)
 * [Have our route respond with HTML file](#have-our-route-respond-with-html-file)
+* [Simpler way to respond with HTML file](#simpler-way-to-respond-with-html-file)
 * [What about static files such as CSS and client side JS](#what-about-static-files-such-as-css-and-client-side-js)
 * [How about passing some dynamic data to an HTML template](#how-about-passing-some-dynamic-data-to-an-html-template)
 * [Sessions](#sessions)
@@ -136,6 +137,24 @@ nunjucks.configure('views', {
 11 L11 currently reads: `app.get('/about', (req, res) => res.send('About route!'));`. Let's change the `res.send('About route!')` bit to `res.render('about.html')`.  
 12 Switch to the app tab, make sure the url ends with `/about`, reload the page, and you should see big header saying `About route!`.  
 13 Congrats! Your first HTML file sent from the server to your browser, rendering HTML!!
+
+## Simpler way to respond with HTML file
+
+Nunjucks is great when you want to pass some dynamic data from the database (or just some static data you keep in a .js file on the server), but when your App is mainly client-side App, there's a decent chance all you will need is just to send an .html file using `sendFile()`. Here's how you can do that using `/example` route as an example:  
+
+```
+...
+
+app.use(express.static('static'))
+
+app.get('/example', (req, res) => {
+  res.sendFile('example.html');
+});
+
+...
+```
+
+Simply put, we are serving `example.html` as a static asset. Check the next chapter to learn about serving static files/assets.
 
 ## What about static files such as CSS and client side JS
 
