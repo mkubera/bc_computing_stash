@@ -72,11 +72,12 @@ The second one is an info file telling you more about your project. Read it twic
 ## Codeanywhere Step 4 Initialise new Node project and install Express
 
 1 Go to terminal (1st tab, or (left hand side) right click on the name of your project under `Connections` and choose `SSH Terminal`).  
-2 Type `npm init`. This will initialise a new Node.js project. You will be asked several questions. Just hit enter to accept the default values for each question.  
-3 Now type `ls` (a command to list files in the directory). You should see only one filed: `package.json`.  
+2 Type `npm init` and hit enter. This will initialise a new Node.js project. You will be asked several questions. Just hit enter to accept the default values for each question.  
+3 Now type `ls` (a command to list files in the directory). You should see only one file: `package.json`.  
 4 Reload the browser's tab. The browser will likely ask about leaving the page. Confirm 'Leave'. (This will show `package.json` correctly in the list of files on the left hand side.)  
 5 Now you should see `package.json` showing properly.  
-6 Go back to the console, and type `npm install express --save`. This will install the Express framework + save it as a dependency in `package.json` file.  
+6 Go back to the console (terminal), and type `npm install express --save`. This will install the Express framework + save it as a dependency in `package.json` file.  
+7 Open your `package.json` file. You should see a line that looks something like this: `"express": "^4.16.4"` (note that the exact version of express will likely be a bit different).  
 
 ## Codeanywhere Step 5 Working web server and Hello World
 
