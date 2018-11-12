@@ -455,9 +455,51 @@ The function will be taking several arguments (values from the input fields), va
     }
 ```
 
-The function `validateInputFields` takes four *arguments* (or *parameters*; sometimes shortened to *args* or *params*), namely: `username`, `genderM`, `genderF`, and `tandc`. These are all the variables that gather user input from `<input>` tags. We simply *pass* them to the function. 
+The function `validateInputFields` takes four *arguments* (or *parameters*; sometimes shortened to *args* or *params*), namely: `username`, `genderM`, `genderF`, and `tandc`. These are all the variables that gather user input from `<input>` tags. We simply *pass* them to the function.  
+
+What we get here is actually the very same thing in terms of what code does and what the application does, but we have wrapped the conditional code (the validation part) inside a function. What's the benefit of that? There are at least three benefits: (1) we can now reuse the code by simply *calling* the function somewhere else in our App; (2) the `EventListener` has now less code (and thus looks cleaner); (3) for the sake of this tutorial, we keep everything in one file, but if we were writing a more complex App, we would have several `.js` files. We could then place the `validateInputFields` function in a separate file (for example `utils.js` or `functions.js`).  
 
 Notice that the `function` is defined outside of the `EventListener`, just before the `</script`> closing tag.
+
+Your JS code inside `<script>` tag should now look like that:  
+
+```
+    var submitButton = document.querySelector('#SubmitButton'); // targets the submit button
+    var inputUsername = document.querySelector('#InputUsername'); // targets the username input
+    var inputGenderM = document.querySelector('#InputGenderM'); // targets the male gender input
+    var inputGenderF = document.querySelector('#InputGenderF'); // targets the female gender input
+    var inputTandC = document.querySelector('#InputTandC'); // targets the TandC input
+    var errorMsg = document.querySelector('#ErrorMsg'); // targets the error message
+    var successMsg = document.querySelector('#SuccessMsg'); // targets the success message
+
+    submitButton.addEventListener('click', function(event) {
+      event.preventDefault(); // prevents the form from being sent to the server
+                             // (keeps it client/browser-side and prevents
+                             // the browser from awkward reloading)
+
+      var username = inputUsername.value; // the value will be a String
+      var genderM = inputGenderM.checked; // the value will be a Boolean
+      var genderF = inputGenderF.checked; // the value will be a Boolean
+      var tandc = inputTandC.checked; // the value will be a Boolean
+
+      console.log([username, genderM, genderF, tandc]);
+
+      validateInputFields(username, genderM, genderF, tandc);
+    })
+
+    function validateInputFields(username, genderM, genderF, tandc) {
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+        errorMsg.classList.remove('hidden');
+        successMsg.classList.add('hidden');
+      } else {
+        console.log("valid");
+        errorMsg.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+      }
+    }
+```
 
 ## Full code
 
@@ -519,6 +561,10 @@ This is what the full code should look like:
 
       console.log([username, genderM, genderF, tandc]);
 
+      validateInputFields(username, genderM, genderF, tandc);
+    })
+
+    function validateInputFields(username, genderM, genderF, tandc) {
       // validation
       if (username === "" || (!genderM && !genderF) || !tandc) {
         console.log("not valid");
@@ -529,10 +575,8 @@ This is what the full code should look like:
         errorMsg.classList.add('hidden');
         successMsg.classList.remove('hidden');
       }
-    })
-
+    }
   </script>
 </body>
 </html>
-
 ```
