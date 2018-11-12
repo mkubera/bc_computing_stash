@@ -89,7 +89,7 @@ Let's now create the most basic web server using Express framework.
 6 Type `node index.js`.  
 7 You should see `Example app listening on port 3000!` in the terminal.  
 8 Go to the info tab (2nd tab by default OR right click on the name of your project under `Connections` (left hand side) and choose `Info`).  
-9 In the opened Info tab, scroll down, and click on the second link. It starts with `https`.  
+9 In the opened Info tab, scroll down, and click on the first link. It starts with `http(s)`.  
 10 In the newly opened tab, you should see `Hello World!`.  
 11 Congrats!! Your first app is running smoothly on a remote server, somewhere in the world :-)
 
