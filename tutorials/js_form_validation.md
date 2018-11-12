@@ -44,7 +44,7 @@ Insert the code below between the `<div id="Wrapper">` and `</div>` tags.
       <input id="InputGenderM" type="radio" name="gender"> Male
       <input id="InputGenderF" type="radio" name="gender"> Female <br>
       <input id="InputTandC" type="checkbox"> I agree to the Terms and Conditions <br>
-      <input id="InputSubmit" type="submit" value="submit">
+      <input id="SubmitButton" type="submit" value="submit">
       
   </form>
 ```
@@ -428,6 +428,36 @@ Add these CSS rules to your `<style>` tag:
     .msg-error { background-color: red; }
     .msg-success { background-color: blue; }
 ```
+
+## Let's wrap the validation inside a function for cleaner code
+
+The function will be taking several arguments (values from the input fields), validate these values, and carry on with blocks of code depending on whether the form validates or not. Here's how it will look like:
+
+```
+      ...
+
+      console.log([username, genderM, genderF, tandc]);
+
+      validateInputFields(username, genderM, genderF, tandc);
+    })
+
+    function validateInputFields(username, genderM, genderF, tandc) {
+      // validation
+      if (username === "" || (!genderM && !genderF) || !tandc) {
+        console.log("not valid");
+        errorMsg.classList.remove('hidden');
+        successMsg.classList.add('hidden');
+      } else {
+        console.log("valid");
+        errorMsg.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+      }
+    }
+```
+
+The function `validateInputFields` takes four *arguments* (or *parameters*; sometimes shortened to *args* or *params*), namely: `username`, `genderM`, `genderF`, and `tandc`. These are all the variables that gather user input from `<input>` tags. We simply *pass* them to the function. 
+
+Notice that the `function` is defined outside of the `EventListener`, just before the `</script`> closing tag.
 
 ## Full code
 
