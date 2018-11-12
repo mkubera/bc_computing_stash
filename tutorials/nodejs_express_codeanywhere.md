@@ -100,15 +100,15 @@ Let's now create the most basic web server using Express framework.
 Routes are server's API. They specify what happens when someone (or something) accesses a specific url (e.g. http://example.com/about). In this case `/about` is a route. It has to respond with something, otherwise user will see an error message (404).  
 
 1 Go to your `index.js` file.  
-2 Copy L4 (line 4).  
-3 Paste it underneath L4 (it will become your new L5).  
+2 Copy L5 (line 5).  
+3 Paste it underneath L5 (it will become your new L6).  
 4 Change `'/'` to `/about`. And `'Hello World!'` to `About route!`.  
-5 Now, in your other tab where your app is accessed/opened, at the end of the url type `/about`. You should see `Cannot GET /about`. Not exactly what we want, right? Easy fix! Go to terminal tab, stop the server (`Ctrl+C`), and push the up-arrow on your keyboard to bring `node index.js` again (just a little time-saving trick).  
-6 You should see a new page shouting `About route!`. Awesome!!  
+5 Now, in your other tab where your app is accessed/opened, at the end of the url type `/about`. You should see `Cannot GET /about`. Not exactly what we want, right? Easy fix! Go to terminal tab, stop the server (`Ctrl+C`), and push the `up-arrow` on your keyboard to bring `node index.js` again (just a little time-saving trick).  
+6 Go back to the tab with your app and reload the page. You should now the about page shouting `About route!`. Awesome!!  
 7 But that's a bit tiring, to have to always restart your web server manually. Let's automate it!  
 8 In your terminal, stop the server (`Ctrl+C`).  
 9 Now type: `npm install nodemon --save-dev`. It will install a npm (Node Package Manager) package called nodemon -- a daemon to keep our server running and re-running on any changes. Cool, huh? :-)  
-10 Once installed, we need to edit `package.json` file. Underneath L6 (that reads: `"scripts": {`) we need to add a new line: `"start": "nodemon index.js",`. This will make sure that on typing `npm start` nodemon will get executed. Npm allows us to create scripts like that. It's pretty useful.  
+10 Once installed, we need to edit `package.json` file. Underneath L6 (that reads: `"scripts": {`) we need to add a new line: `"start": "nodemon index.js",`. This will make sure that on typing `npm start` nodemon gets executed. Npm allows us to create scripts like that. It's pretty useful.  
 11 Now, back in terminal, type `npm start`. This will launch the script we've created in `package.json`. Cool! Awesome!! From now on, always start your project with `npm start`.  
 12 Great!! You've just created a new route that responds with a simple string when someone/thing accesses it! And you've made your server to "automagically" reload on any change you make to files -- fantastic!
 
