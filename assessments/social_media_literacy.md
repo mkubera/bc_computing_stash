@@ -3,7 +3,7 @@
 * [Instructions](#instructions)
 * [Before you begin](#before-you-begin)
 * [Topics](#topics)
-* [Topic: format](#topics-format)
+* [Topic: format](#topic-format)
 * [Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)
 
 
