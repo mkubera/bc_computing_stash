@@ -3,7 +3,9 @@
 * [Instructions](#instructions)
 * [Before you begin](#before-you-begin)
 * [Topics](#topics)
+* [Topic: format](#topics-format)
 * [Issue: Advantages vs Disadvantages of Social Media for Society](#issue-advantages-vs-disadvantages-of-social-media-for-society)
+
 
 # Instructions
 
@@ -191,10 +193,8 @@ Debate: https://www.debate.org/opinions/are-facebook-and-twitter-here-to-stay-fo
 https://www.rd.com/culture/10-social-networking-sites-that-could-replace-facebook/
 
 
-# Issue: Advantages vs Disadvantages of Social Media for Society
 
-Discuss the issue on forums within your group.
-https://moodle.borderscollege.ac.uk/mod/forum/view.php?id=192246  
+# Topic: format
 
 When creating a new discussion topic, follow this pattern:  
 Group X: topic_number_and_name  
@@ -202,3 +202,7 @@ Group X: topic_number_and_name
 for example, if your group is **Group A**, and your chosen topic is **13 how social media makes money**, create a topic like this:  
 Group A: 13 how social media makes money
 
+
+# Issue: Advantages vs Disadvantages of Social Media for Society
+
+Discuss the issue using a chosen social media (blog, forum, etc.) within your group.  
