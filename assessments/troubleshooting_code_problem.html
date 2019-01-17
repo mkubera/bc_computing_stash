@@ -13,7 +13,7 @@
   <script type="text/javascript">
 
     var d = dokument;
-    var appDiv = d.getElementById('app');
+    var appDiv = d.getElementBy('app');
     var blizzGamesHeader = d.createElement('h1');
     var blizzGamesUl = d.createElement('ul');
     var blizzGameLi = d.createElement('li');
@@ -25,11 +25,11 @@
       { title: 'The Lost Vikings', yor: 1992, genres: ['Side-scrolling'] },
       { title: 'Warcraft', yor: 1994, genres: ['RTS'] },
       { title: 'Diablo', yor: 1996, genres: ['Action RP'] },
-      { title: 'Hearthstone', yor: 2014, genres: ['Digital CCG'] },
+      { title: 'Hearthstone', yar: 2014, genres: ['Digital CCG'] },
       { title: 'Starcraft: Remastered', yor: 2017, genres: ['RTS'] },
     ];
 
-    blizzGames.map(fanction (bGame) {
+    blizzGame.map(fanction (bGame) {
       var newBlizzGameLi = blizzGameLi.cloneNode(false);
       newBlizzGameLi.innerHTML = `
         <p>${bGame.title} (${bGame.yor})</p>
